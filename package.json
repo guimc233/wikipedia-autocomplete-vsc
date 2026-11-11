@@ -1,0 +1,22 @@
+{
+  "name": "wikipedia-autocomplete",
+  "displayName": "Wikipedia Link Picker",
+  "description": "Search a local Wikipedia title index and insert Markdown links.",
+  "version": "0.1.0",
+  "publisher": "wikipedia-link-picker",
+  "license": "MIT",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "main": "./src/extension.js",
+  "extensionKind": ["workspace"],
+  "contributes": {
+    "commands": [
+      { "command": "wikipediaAutocomplete.linkSelection", "title": "Wikipedia: 为选中文字插入链接" },
+      { "command": "wikipediaAutocomplete.updateIndex", "title": "Wikipedia: 下载或更新中文标题索引" }
+    ],
+    "keybindings": [{ "command": "wikipediaAutocomplete.linkSelection", "key": "ctrl+alt+w", "mac": "cmd+alt+w", "when": "editorTextFocus && editorLangId == markdown && editorHasSelection" }],
+    "menus": { "editor/context": [{ "command": "wikipediaAutocomplete.linkSelection", "when": "editorLangId == markdown && editorHasSelection", "group": "navigation" }] }
+  },
+  "scripts": { "package": "vsce package" },
+  "devDependencies": { "@vscode/vsce": "^3.7.1" }
+}
