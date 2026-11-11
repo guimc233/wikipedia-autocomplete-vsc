@@ -9,3 +9,7 @@
 ## Install
 
 打开该[项目](https://zh.wikipedia.org/wiki/%E9%A1%B9%E7%9B%AE)的[Release](https://github.com/guimc233/wikipedia-autocomplete-vsc), 下载vsix[档案](https://zh.wikipedia.org/wiki/%E6%A1%A3%E6%A1%88), 将其安装到你的[VSCode](https://zh.wikipedia.org/wiki/VSCode), 在编辑[Markdown](https://zh.wikipedia.org/wiki/Markdown)文件时, 选中[文本](https://zh.wikipedia.org/wiki/%E6%96%87%E6%9C%AC), 按下[Ctrl](https://zh.wikipedia.org/wiki/Ctrl%E9%94%AE)+[Alt](https://zh.wikipedia.org/wiki/%E8%BD%AC%E6%8D%A2%E9%94%AE)+W即可[体验](https://zh.wikipedia.org/wiki/%E4%BD%93%E9%AA%8C)
+
+## License
+
+本项目使用 [MIT License](https://zh.wikipedia.org/wiki/MIT_License)
